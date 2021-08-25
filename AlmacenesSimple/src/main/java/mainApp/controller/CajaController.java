@@ -56,7 +56,8 @@ public class CajaController {
 		cajaSeleccionada = cajaServiceImpl.cajaID(numReferencia);
 		cajaSeleccionada.setContenido(caja.getContenido());
 		cajaSeleccionada.setValor(caja.getValor());
-		cajaSeleccionada.setAlmacen(null);
+		cajaSeleccionada.setAlmacen(caja.getAlmacen());
+		cajaActualizada= cajaServiceImpl.actualizarCaja(cajaSeleccionada);
 		System.out.println("La caja actualizada es: " + cajaActualizada);
 		return cajaActualizada;
 	}
