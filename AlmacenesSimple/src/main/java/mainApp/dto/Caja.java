@@ -74,7 +74,7 @@ public class Caja {
 		return almacen;
 	}
 
-	public void setCaja(Almacen almacen) {
+	public void setAlmacen(Almacen almacen) {
 		this.almacen = almacen;
 	}
 

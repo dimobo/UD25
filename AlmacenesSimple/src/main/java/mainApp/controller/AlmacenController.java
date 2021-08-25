@@ -45,7 +45,7 @@ public class AlmacenController {
 
 	// Create
 	@PostMapping("/almacenes")
-	public Almacen guardarAlmacen(@RequestBody Almacen almacen) {
+	public Almacen crearAlmacen(@RequestBody Almacen almacen) {
 		return almacenServiceImpl.crearAlmacen(almacen);
 	}
 
