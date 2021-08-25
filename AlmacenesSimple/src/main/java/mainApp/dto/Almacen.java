@@ -30,8 +30,8 @@ public class Almacen {
 	@Column
 	private int capacidad;
 	
-	@OneToMany
-	@JoinColumn(name = "id")
+	@OneToMany(orphanRemoval = true)
+	@JoinColumn(name = "almacen")
 	private List<Caja> numReferencia;
 
 	// Constructores.

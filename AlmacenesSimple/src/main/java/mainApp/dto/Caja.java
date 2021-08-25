@@ -29,19 +29,19 @@ public class Caja {
 	private double valor;
 
 	@ManyToOne
-	@JoinColumn(name = "cajero")
-	Caja caja;
+	@JoinColumn(name = "almacen")
+	Almacen almacen;
 
 	// Constructores.
 
 	public Caja() {
 	}
 
-	public Caja(String numReferencia, String contenido, double valor, Caja caja) {
+	public Caja(String numReferencia, String contenido, double valor, Almacen almacen) {
 		this.numReferencia = numReferencia;
 		this.contenido = contenido;
 		this.valor = valor;
-		this.caja = caja;
+		this.almacen = almacen;
 	}
 
 	// Getters y Setters.
@@ -70,12 +70,12 @@ public class Caja {
 		this.valor = valor;
 	}
 
-	public Caja getCaja() {
-		return caja;
+	public Almacen getAlmacen() {
+		return almacen;
 	}
 
-	public void setCaja(Caja caja) {
-		this.caja = caja;
+	public void setCaja(Almacen almacen) {
+		this.almacen = almacen;
 	}
 
 }

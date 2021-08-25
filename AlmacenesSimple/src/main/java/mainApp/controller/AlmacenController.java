@@ -44,7 +44,7 @@ public class AlmacenController {
 	}
 
 	// Create
-	@PostMapping("/Almacenes")
+	@PostMapping("/almacenes")
 	public Almacen guardarAlmacen(@RequestBody Almacen almacen) {
 		return almacenServiceImpl.crearAlmacen(almacen);
 	}
@@ -62,7 +62,7 @@ public class AlmacenController {
 	}
 
 	// Delete
-	@DeleteMapping("/almacen/{id}")
+	@DeleteMapping("/almacenes/{id}")
 	public void eliminarAlmacen(@PathVariable(name = "id") int id) {
 		almacenServiceImpl.eliminarAlmacen(id);
 	}
