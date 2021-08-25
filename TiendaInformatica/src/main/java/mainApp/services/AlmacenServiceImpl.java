@@ -3,10 +3,10 @@ package mainApp.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import mainApp.dao.IAlmacenDAO;
 import mainApp.dto.Almacen;
-import mainApp.dto.Caja;
 
 /**
  * 
@@ -14,6 +14,7 @@ import mainApp.dto.Caja;
  *
  */
 
+@Service
 public class AlmacenServiceImpl implements IAlmacenService {
 	
 	@Autowired

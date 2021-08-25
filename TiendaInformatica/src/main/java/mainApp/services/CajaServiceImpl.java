@@ -3,6 +3,7 @@ package mainApp.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import mainApp.dao.ICajaDAO;
 import mainApp.dto.Caja;
@@ -13,6 +14,7 @@ import mainApp.dto.Caja;
  *
  */
 
+@Service
 public class CajaServiceImpl implements ICajaService {
 
 	@Autowired
